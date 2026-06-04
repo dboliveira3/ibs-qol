@@ -767,7 +767,7 @@ function genPDF(key) {
   doc.setFontSize(11); doc.setFont("helvetica","bold"); doc.setTextColor(26,25,23);
   doc.text("Guia de interpretação", margin, y);
   y += 8;
-  const interps = [["≥ 80","Boa qualidade de vida"],[" 60–79","Impacto moderado"],[" 40–59","Impacto importante"],["< 40","Impacto grave"]];
+  const interps = [["80-100","Boa qualidade de vida"],["60-79","Impacto moderado"],["40-59","Impacto importante"],["0-39","Impacto grave"]];
   interps.forEach(([r,l]) => {
     doc.setFontSize(9); doc.setFont("helvetica","bold"); doc.setTextColor(26,25,23);
     doc.text(r, margin, y + 3);
